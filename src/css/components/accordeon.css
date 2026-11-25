@@ -14,3 +14,15 @@
 .accordeon > details[open] {
   background-color: #eee;
 }
+.accordeon > details[open] {
+  border-color: #4169e1;
+  background-color: #eef2ff;
+}
+
+.accordeon > details[open] > summary {
+  background-color: #dce5ff;
+}
+
+.accordeon > details > summary:hover {
+  background-color: #e5e5e5;
+}
