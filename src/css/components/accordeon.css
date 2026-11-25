@@ -1,3 +1,33 @@
-/**
-* Accordeon
-*/
+.accordeon {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.accordeon > details {
+  display: flex;
+}
+
+.accordeon > details > summary {
+  cursor: pointer;
+}
+
+.accordeon > details > summary img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.accordeon > details[open] > summary {
+  float: left;
+  margin-right: 20px;
+}
+
+.accordeon > details > div {
+  margin-left: 20px;
+  width: 200px;
+}
+
+.accordeon h3 {
+  margin-top: 10px;
+}
