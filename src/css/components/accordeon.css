@@ -1,3 +1,16 @@
 /**
 * Accordeon
 */
+.accordeon > details {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.accordeon > details > summary {
+  cursor: pointer;
+  padding: 15px;
+}
+
+.accordeon > details[open] {
+  background-color: #eee;
+}

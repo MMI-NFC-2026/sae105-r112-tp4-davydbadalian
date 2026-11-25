@@ -1,5 +1,5 @@
-- nom :
-- prénom :
+- nom : Badalian 
+- prénom : Davyd 
 - URL Netlify :
 
 # Travail
