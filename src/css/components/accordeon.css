@@ -1,54 +1,33 @@
-/**
-* Accordeon
-*/
+.accordeon {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
 .accordeon > details {
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
+  display: flex;
 }
 
 .accordeon > details > summary {
   cursor: pointer;
-  padding: 15px;
 }
 
-.accordeon > details[open] {
-  background-color: #eee;
-}
-.accordeon > details[open] {
-  border-color: #4169e1;
-  background-color: #eef2ff;
+.accordeon > details > summary img {
+  display: block;
+  width: 100px;
+  height: auto;
 }
 
 .accordeon > details[open] > summary {
-  background-color: #dce5ff;
+  float: left;
+  margin-right: 20px;
 }
 
-.accordeon > details > summary:hover {
-  background-color: #e5e5e5;
+.accordeon > details > div {
+  margin-left: 20px;
+  width: 200px;
 }
 
-.accordeon > details > summary {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.accordeon > details > summary::marker,
-.accordeon > details > summary::-webkit-details-marker {
-  display: none;
-}
-
-
-.accordeon > details > summary::before {
-  content: "";
-  width: 0;
-  height: 0;
-  flex-shrink: 0;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-left: 10px solid #333;
-}
-.accordeon > details[open] > summary::before {
-  transform: rotate(90deg);
+.accordeon h3 {
+  margin-top: 10px;
 }
